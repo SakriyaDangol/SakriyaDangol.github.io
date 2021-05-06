@@ -1,9 +1,10 @@
 .body{
-    background: white;
+    background: black;
     color: orangered;
 }
 
-table{
-    border: 60px ;  
+table, th, td{
+    border: 2px solid greenyellow ;  
+
     
 }
