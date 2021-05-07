@@ -1,10 +1,66 @@
-.body{
-    background: black;
+*{
+    margin:0%;
+}
+
+.assign-bg{
+    background-color: black;
     color: orangered;
+    width: 100%;
+    height: 200vh;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 1%;
+    margin-bottom: 1.5%;
 }
 
 table, th, td{
-    border: 2px solid greenyellow ;  
-
-    
+    border: 2px solid rgb(236, 72, 72) ;  
+    width: 20%;
 }
+
+th, td{
+    padding: 5px;
+    width: 50px;
+}
+
+td{
+    font-style: italic;
+}
+
+img{
+    border-color: 5px solid red;
+}
+
+.my-photo{
+    border-radius: 100%;
+    width: 20%;
+    height: 20%;
+    margin: 1.2%;
+}
+
+.github-photo{
+    border-radius: 100%;
+    width: 2.2%;
+    height: 2.2%;
+    vertical-align: middle;
+   
+}
+
+
+h2{
+    text-decoration: underline;
+    color: lawngreen;
+    margin: 1%;
+    margin-bottom: 1.5%;
+}
+
+p{
+    margin: 1%;
+}
+
+hr{
+    margin: 2%;
+}
+
