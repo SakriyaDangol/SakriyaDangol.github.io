@@ -6,7 +6,8 @@
     background-color: black;
     color: orangered;
     width: 100%;
-    height: 300vh;
+    height: auto;
+    overflow: hidden;
 }
 
 .assign-info{
