@@ -16,13 +16,31 @@
     cursor: default;
 }
 
+.my-photo{
+    border-radius: 100%;
+    margin-top: 1vw;
+}
+
+.github-photo{
+    border-radius: 100%;
+    width: 2.2%;
+    height: 2.2%;
+    vertical-align: middle;
+    border: 0.4vh solid red;
+    cursor: pointer;
+    margin-right: 0.5vw;
+}
+
+img{
+    border: 3px outset red;
+    width: 20%;
+}
+
 .assignment{
     width: 95%;
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
 }
 
 .assign-table{
@@ -70,26 +88,6 @@ td:hover{
     background: rgb(68, 67, 67);
 }
 
-img{
-    border: 3px outset red;
-    width: 20%;
-}
-
-.my-photo{
-    border-radius: 100%;
-    margin-top: 1vw;
-}
-
-.github-photo{
-    border-radius: 100%;
-    width: 2.2%;
-    height: 2.2%;
-    vertical-align: middle;
-    border: 0.4vh solid red;
-    cursor: pointer;
-    margin-right: 0.5vw;
-}
-
 h2{
     text-decoration: underline;
     color: lawngreen;
@@ -117,15 +115,14 @@ a:hover{
 }
 
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:700px) {
 
     .assignment{
         width: 95%;
         margin: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        align-items: flex-start;
+        justify-content: center;
     }
 
     table{
