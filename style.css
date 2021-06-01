@@ -16,26 +16,27 @@
     cursor: default;
 }
 
+.assignment{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
 .assign-table{
-    width: auto;
-    height: auto;
-    display: inline-block;
-    margin-left: 15px;
+    
 }
 
 table{
+    width: 5vw;
     border-collapse: collapse;
     margin: 1%;
     margin-bottom: 5%;
 }
 
-table, th, td{
-    width: 20%;
-}
-
-th, td{
+table th, td{
     padding: 5px 10px;
-    width: 50px;
 }
 
 th{
