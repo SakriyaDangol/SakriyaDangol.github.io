@@ -20,18 +20,18 @@
     width: 95%;
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
 }
 
 .assign-table{
-    
+    width: 100%;
 }
 
 table{
-    width: 5vw;
+    width: 100%;
     border-collapse: collapse;
-    margin: 1%;
     margin-bottom: 5%;
 }
 
@@ -114,4 +114,24 @@ a{
 
 a:hover{
     color: tomato;
+}
+
+
+@media screen and (min-width:500px) {
+
+    .assignment{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    table{
+        width: 20%;
+        border-collapse: collapse;
+        margin-bottom: 5%;
+    }
+    
 }
