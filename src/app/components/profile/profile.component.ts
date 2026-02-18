@@ -1,11 +1,5 @@
 import { Component } from '@angular/core';
-
-interface ContactInfo {
-  icon: string;
-  label: string;
-  value: string;
-  link?: string;
-}
+import { ContactInfo } from '../../models';
 
 @Component({
   selector: 'app-profile',
