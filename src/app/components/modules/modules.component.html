@@ -1,0 +1,30 @@
+<div *ngFor="let module of modules" class="module-card mb-5">
+    <div class="module-header">
+        <div class="module-icon" [style.background]="module.color">
+            <i class="bi {{ module.icon }}"></i>
+        </div>
+        <div>
+            <h2 class="module-title">{{ module.title }}</h2>
+            <p class="text-muted mb-0">{{ module.description }}</p>
+        </div>
+    </div>
+
+    <div class="assignments-grid">
+        <div *ngFor="let day of module.days" class="day-section">
+            <span class="day-badge">Day {{ day.number }}</span>
+            <div *ngFor="let assignment of day.assignments" class="assignment-card">
+                <div class="assignment-title">{{ assignment.title }}</div>
+                <div class="d-flex gap-2 flex-wrap">
+                    <a [href]="assignment.githubUrl" class="btn btn-action btn-sm" target="_blank">
+                        <i class="bi bi-github me-1"></i>Code
+                    </a>
+                    <ng-container *ngIf="assignment.liveDemoUrl">
+                        <a [href]="assignment.liveDemoUrl" class="btn btn-secondary-action btn-sm" target="_blank">
+                            <i class="bi bi-eye me-1"></i>Live Demo
+                        </a>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

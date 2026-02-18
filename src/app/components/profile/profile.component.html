@@ -1,0 +1,49 @@
+<div class="hero-section text-center text-white mb-5">
+    <h1 class="display-4 fw-bold mb-3">Welcome to My Portfolio</h1>
+    <p class="lead mb-0">A collection of my web development assignments and projects</p>
+</div>
+
+<div class="row mb-5">
+    <div class="col-lg-4">
+        <div class="profile-card h-100">
+            <div class="text-center mb-4">
+                <img src="assets/images/sakriya1.png" alt="Sakriya Dangol" class="profile-img">
+            </div>
+            <h3 class="text-center mb-4">Sakriya Dangol</h3>
+            <div class="mb-3">
+                <div *ngFor="let contact of contactInfo" class="contact-item">
+                    <i class="bi {{ contact.icon }}"></i>
+                    <span><strong>{{ contact.label }}</strong> 
+                        <ng-container *ngIf="contact.link">
+                            <a [href]="contact.link" target="_blank" class="text-decoration-none">{{ contact.value }}</a>
+                        </ng-container>
+                        <ng-container *ngIf="!contact.link">{{ contact.value }}</ng-container>
+                    </span>
+                </div>
+            </div>
+            <div class="text-center">
+                <span class="stats-badge">
+                    <i class="bi bi-check-circle me-1"></i>Active Developer
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <div class="profile-card h-100">
+            <h4 class="mb-3">About Me</h4>
+            <p class="text-muted">
+                I'm a passionate web developer currently studying in Batch III/I. This portfolio showcases my journey through various web development assignments, 
+                from basic HTML/CSS to advanced JavaScript applications. Each project represents a milestone in my learning journey and demonstrates my growing expertise in web technologies.
+            </p>
+            <div class="row mt-4">
+                <div *ngFor="let skill of skills" class="col-md-4">
+                    <div class="text-center p-3 bg-light rounded">
+                        <i class="bi bi-code fs-2 text-primary mb-2"></i>
+                        <h6>{{ skill.name }}</h6>
+                        <small class="text-muted">{{ skill.description }}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
